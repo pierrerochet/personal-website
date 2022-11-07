@@ -4,7 +4,7 @@
   "homepage": "https://pierrerochet.github.io/personal-website",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
+    "build-gh": "npm run build",
     "deploy-gh": "gh-pages -d build",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

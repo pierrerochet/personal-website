@@ -2,7 +2,6 @@ import { AiOutlineCheckCircle, AiOutlineWarning } from "react-icons/ai";
 import { BiRightArrow } from "react-icons/bi";
 
 import { Grid } from "react-loader-spinner";
-import ReactJson from "react-json-view";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -140,14 +139,6 @@ function SpamFilterDemo() {
                 </span>
               </span>
             )}
-            <ReactJson
-              name={null}
-              enableClipboard={false}
-              displayObjectSize={false}
-              displayDataTypes={false}
-              src={state.resp}
-              theme={"monokai"}
-            />
           </div>
         </div>
       )}
