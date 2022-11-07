@@ -1,5 +1,4 @@
 import { AiOutlineCheckCircle, AiOutlineWarning } from "react-icons/ai";
-import { BiRightArrow } from "react-icons/bi";
 
 import { Grid } from "react-loader-spinner";
 import React, { useState, useEffect } from "react";
@@ -139,6 +138,7 @@ function SpamFilterDemo() {
                 </span>
               </span>
             )}
+            <pre>{JSON.stringify(state.resp, null, 4)}</pre>
           </div>
         </div>
       )}
