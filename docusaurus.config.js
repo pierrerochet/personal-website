@@ -65,7 +65,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "ml-spam-filter-fr",
+            docId: "ml-spam-filter-fr/README",
             position: "left",
             label: "Projects",
           },
