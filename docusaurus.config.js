@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { modifyContent } = require("./utils");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -85,39 +86,20 @@ const config = {
     }),
 
   plugins: [
-    async function myPlugin(context, options) {
-      return {
-        name: "docusaurus-tailwindcss",
-        configurePostCss(postcssOptions) {
-          // Appends TailwindCSS and AutoPrefixer.
-          postcssOptions.plugins.push(require("tailwindcss"));
-          postcssOptions.plugins.push(require("autoprefixer"));
-          return postcssOptions;
-        },
-      };
-    },
-    // [
-    //   "docusaurus-plugin-remote-content",
-    //   {
-    //     // options here
-    //     name: "readme", // used by CLI, must be path safe
-    //     sourceBaseUrl: "https://raw.githubusercontent.com/pierrerochet/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-    //     outDir: "docs", // the base directory to output to.
-    //     documents: ["/ml-spam-filter-fr/master/README.md"], // the file names to download
-    //     modifyContent: modifyContent,
-    //   },
-    // ],
+    [
+      "docusaurus-plugin-remote-content",
+      {
+        // options here
+        name: "content", // used by CLI, must be path safe
+        sourceBaseUrl: "https://raw.githubusercontent.com/pierrerochet/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+        outDir: "docs", // the base directory to output to.
+        documents: ["/ml-spam-filter-fr/master/README.md"], // the file names to download
+        performCleanup: false,
+        noRuntimeDownloads: true,
+        modifyContent: modifyContent,
+      },
+    ],
   ],
 };
-
-function modifyContent(filename, content) {
-  const newFilename = filename.replace(
-    "/ml-spam-filter-fr/master/README.md",
-    "_README.md"
-  );
-
-  // we don't want to modify this item, since it doesn't contain "README" in the name
-  return { filename: newFilename };
-}
 
 module.exports = config;
