@@ -1,0 +1,42 @@
+---
+title: Choices made in the project
+description: Explain the main choices made in the project
+---
+
+# 💡 Choices made in the project
+
+Here, we tried to respond to most frequently asked questions and justify choices made in the project.
+
+### 👉 Why a spam filter for French language ?
+
+Because French is a beautiful language 😉
+
+### 👉 Why use a linear SVM and Stochastic Descent Gradient for model training ?
+
+Historically, Linear SVM performs well on large datasets with many features for relatively fast training time. It is therefore particularly suitable for textual data.
+We selected it for its good performance compared to the other algorithms we tested.
+Using SGD for convergence allows us iterative learning. This strategy is useful for updating our model with new observations.
+
+:::info
+In Sklearn this is possible via [partial_fit](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier.partial_fit) method.
+:::
+
+The performance is good enough not to consider heavier architecture based on neural networks. In addition, we have chosen to favor a light and easy to handle model.
+
+### 👉 Why do a probability calibration ?
+
+> When performing classification you often want not only to predict the class label, but also obtain a probability of the respective label. This probability gives you some kind of confidence on the prediction. Some models can give you poor estimates of the class probabilities and some even do not support probability prediction (e.g., some instances of SGDClassifier). The calibration module allows you to better calibrate the probabilities of a given model, or to add support for probability prediction.
+>
+> -- [_Sklearn documentation_](https://scikit-learn.org/stable/modules/calibration.html)
+
+Although not required, we want a **confidence score** in order to **manage the filter strength** in the service.
+
+### 👉 Why use FastAPI to build the API ?
+
+> FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
+>
+> -- [_FastAPI Documentation_](https://fastapi.tiangolo.com/)
+
+FastAPI is the python framework allowing to build API in the **fastest** manner.
+**Easy to learn, based on standard python type, and automatically generating the documentation** are some of its many advantages.
+For building ML service in python it has become a standard choice in many projects.

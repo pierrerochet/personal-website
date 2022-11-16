@@ -13,7 +13,7 @@ const config = {
   baseUrl: "/personal-website/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon_io/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -37,15 +37,15 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -59,26 +59,71 @@ const config = {
     ({
       navbar: {
         title: "Pierre Rochet",
-        // logo: {
-        //   alt: "Logo",
-        //   src: "img/logo.svg",
-        // },
+        logo: {
+          alt: "Logo",
+          src: "img/logo.png",
+        },
         items: [
-          {
-            type: "doc",
-            docId: "ml-spam-filter-fr/README",
-            position: "left",
-            label: "Projects",
-          },
-          // { to: "blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/pierrerochet",
             label: "GitHub",
-            position: "right",
+            position: "left",
           },
+          {
+            to: "Resume",
+            position: "right",
+            label: "Resume",
+          },
+          {
+            type: "doc",
+            docId: "projects/index",
+            position: "right",
+            label: "Projects",
+          },
+          // { to: "blog", label: "Blog", position: "right" },
+          // {
+          //   to: "temp",
+          //   label: "Ressources",
+          //   position: "right",
+          // },
         ],
       },
-      footer: {},
+      footer: {
+        style: "dark",
+        links: [
+          {
+            title: "Social",
+            items: [
+              {
+                label: "Linkedin",
+                href: "https://www.linkedin.com/in/pierre-rochet",
+              },
+            ],
+          },
+          {
+            title: "More",
+            items: [
+              {
+                label: "Resume",
+                to: "/Resume",
+              },
+              {
+                label: "Projects",
+                to: "/docs/Projects",
+              },
+              // {
+              //   label: "Blog",
+              //   to: "/blog",
+              // },
+              // {
+              //   label: "Ressources",
+              //   to: "/ressources",
+              // },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Pierre Rochet. All rights reserved.`,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

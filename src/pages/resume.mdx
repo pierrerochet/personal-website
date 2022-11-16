@@ -1,0 +1,188 @@
+import Resume from "@site/static/img/undraw_resume.svg";
+import ExperienceTimeline from "@site/src/components/ExperienceTimeline";
+import EducationTimeline from "@site/src/components/EducationTimeline";
+import EducationImage from "@site/static/img/undraw_education.svg";
+import ExperienceImage from "@site/static/img/undraw_project_completed_re_jr7u.svg";
+import InterestCard from "@site/src/components/InterestCard";
+import SkillCard from "@site/src/components/SkillCard";
+import { MdRowing, MdComputer, MdLoop } from "react-icons/md";
+import { FaTheaterMasks } from "react-icons/fa";
+import {
+  AiOutlineBarChart,
+  AiOutlineCloudUpload,
+  AiOutlineCode,
+} from "react-icons/ai";
+import { TiFlowChildren } from "react-icons/ti";
+import { BiCodeBlock } from "react-icons/bi";
+
+export function Badge({ children }) {
+  return <span className="badge badge--primary">{children}</span>;
+}
+
+# Resume
+
+## About
+
+<p className="text--justify" style={{ textIndent: "2em" }}>
+  Welcome to my resume ! I'm Pierre. As you will see below, my background is a
+  bit atypical since I began studying literature to finish them in computer
+  science. I've always had a lot of curiosity about how thought works and that's
+  why I started philosophy. Then a few years ago, I learning programming on my
+  own and this developed a real passion for computing. Today I participate in
+  the emergence of a new digital world by creating systems from data and machine
+  learning for a positive human impact. Feel free to check out my{" "}
+  <a href="/docs/projects">projects</a>.
+</p>
+
+## Skills
+
+<div className="row">
+  <div className="col margin-bottom--lg">
+    <SkillCard
+      Icon={AiOutlineCode}
+      title={"Programming"}
+      description={
+        "I use Python on a daily basis, Nodejs for specific cases and Bash for everything related to the unix environment."
+      }
+      tools={[
+        {text: "Python - Expert", level: "expert"}, 
+        {text: "Nodejs - Proficient", level: "proficient"}, 
+        {text: "Bash - Proficient", level: "proficient"}]}
+    />
+  </div>
+  <div className="col margin-bottom--lg">
+    <SkillCard
+      Icon={AiOutlineBarChart}
+      title={"Dataviz"}
+      description={
+        "I use Matplotlib for simple graphs, Seanborn for correlations and Plotly for interactive graphs. I monitor with Kibana."
+      }
+      tools={[
+        {text: "Matplotlib - Expert", level: "expert"}, 
+        {text: "Seanborn - Expert", level: "expert"}, 
+        {text: "Kibana - Proficient", level: "proficient"}]}
+    />
+  </div>
+  <div className="col margin-bottom--lg">
+    <SkillCard
+      Icon={MdLoop}
+      title={"Model training"}
+      description={
+        "I train with Scikit-learn for traditional algorithms, Tensorflow and Transformers for neural networks and more complex architectures."
+      }
+      tools={[
+        {text: "Scikit-learn - Expert", level: "expert"}, 
+        {text: "Tensorflow - Proficient", level: "proficient"}, 
+        {text: "Transformers - Proficient", level: "proficient"}]}
+    />
+  </div>
+
+</div>
+<div className="row">
+  <div className="col margin-bottom--lg">
+    <SkillCard
+      Icon={BiCodeBlock}
+      title={"Application building"}
+      description={"I develop APIs with FastAPI, Flask or Express."}
+      tools={[
+        {text: "FastAPI - Expert", level: "expert"}, 
+        {text: "Flask - Proficient", level: "proficient"}, 
+        {text: "Express - Proficient", level: "proficient"}]}
+    />
+  </div>
+  <div className="col margin-bottom--lg">
+    <SkillCard
+      Icon={TiFlowChildren}
+      title={"MLOps"}
+      description={
+        "I manage model lifecycle with MLflow and create complex data pipelines with Airflow."
+      }
+      tools={[
+        {text: "MLflow - Expert", level: "expert"}, 
+        {text: "Airflow - Proficient", level: "proficient"}]}
+    />
+  </div>
+  <div className="col margin-bottom--lg">
+    <SkillCard
+      Icon={AiOutlineCloudUpload}
+      title={"Deployment"}
+      description={
+        "I deploy on server or cloud platform with docker. I have already worked on IBM Cloud and AWS."
+      }
+      tools={[
+        {text: "Docker - Expert", level: "expert"},
+        {text: "IBM Cloud - Proficient", level: "proficient"}, 
+        {text: "Terraform - Intermediate", level: "intermediate"},
+        {text: "Kubernetes - Intermediate", level: "intermediate"},
+        ]}
+    />
+  </div>
+</div>
+
+## Work experience
+
+<div className="row">
+  <div className="col col--8">
+    <ExperienceTimeline />
+  </div>
+  <div
+    className="col col--4"
+    style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+  >
+    <ExperienceImage width="80%" height="300px" className="margin-vert--lg" />
+  </div>
+</div>
+
+## Education
+
+<div className="row">
+  <div
+    className="col col--4"
+    style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+  >
+    <EducationImage width="80%" height="300px" className="margin-vert--lg" />
+  </div>
+  <div className="col col--8">
+    <EducationTimeline />
+  </div>
+</div>
+
+:::note
+I'm French and I having entirely completed my studies in France. The equivalent English names of establishments and diplomas are not always obvious, which is why I decided to leave the French names.
+:::
+
+## Interests
+
+<div className="row">
+  <div className="col margin-bottom--lg">
+    <InterestCard
+      Icon={MdRowing}
+      title="Rowing"
+      description="I practice rowing in a club. I train 1 to 3 sessions per week to keep myself healthy in a beautiful natural environment."
+    />
+  </div>
+  <div className="col margin-bottom--lg">
+    <InterestCard
+      Icon={FaTheaterMasks}
+      title="Theatre"
+      description="The playwright is my favorite style. This is a great way to express ideas and emotions on topics that are sometimes sensitive."
+    />
+  </div>
+  <div className="col margin-bottom--lg">
+    <InterestCard
+      Icon={MdComputer}
+      title="Computer science"
+      description="Computer science remains my greatest passion, I am constantly learning and testing new technologies as much as possible."
+    />
+  </div>
+</div>
+
+<nav className="pagination-nav docusaurus-mt-lg">
+  <div className="pagination-nav__item"></div>
+  <div className="pagination-nav__item pagination-nav__item--next">
+    <a className="pagination-nav__link" href="/docs/projects">
+      <div className="pagination-nav__sublabel">Next</div>
+      <div className="pagination-nav__label">Projects</div>
+    </a>
+  </div>
+</nav>

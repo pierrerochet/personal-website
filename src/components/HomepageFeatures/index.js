@@ -1,43 +1,54 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Data engineering",
+    Svg: require("@site/static/img/undraw_data_report_re_p4so.svg").default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        I process and analyze the data, select the right features in order to
+        exploit them to their full potential
+      </>
+    ),
+  },
+
+  {
+    title: "Model training",
+    Svg: require("@site/static/img/undraw_firmware_re_fgdy.svg").default,
+    description: (
+      <>
+        I select the best algorithm for the data, choice the best parameters and
+        perform the training
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "Application building",
+    Svg: require("@site/static/img/undraw_programming_re_kg9v.svg").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        I build the product to serve and exploit the model. It is usually an
+        independent API but it can also be a plugin for third party software
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: "Deployment",
+    Svg: require("@site/static/img/undraw_server_cluster_jwwq.svg").default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        I deploy the product in any server or cloud platform. You will then be
+        able to benefit from its functionalities
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--3")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
