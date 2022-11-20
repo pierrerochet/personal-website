@@ -13,9 +13,6 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header>
-      <head>
-        <meta name="keywords" content="cooking, blog" />
-      </head>
       <div className="container">
         <div className="row">
           <div className={clsx("col col--6 vertical-align")}>

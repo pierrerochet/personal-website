@@ -10,7 +10,7 @@ const config = {
   title: "Pierre Rochet",
   tagline: "Machine Learning Engineer",
   url: "https://pierrerochet.github.io",
-  baseUrl: "/",
+  baseUrl: "/personal-website/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon_io/favicon.ico",
@@ -41,7 +41,13 @@ const config = {
           //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
+          blogTitle: "Pierre Rochet blog",
+          blogDescription: "Various blog articles written by Pierre Rochet",
           showReadingTime: true,
+
+          // blogSidebarTitle: "All posts",
+          // blogSidebarCount: "ALL",
+
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -87,7 +93,7 @@ const config = {
             position: "right",
             label: "Projects",
           },
-          // { to: "blog", label: "Blog", position: "right" },
+          { to: "blog", label: "Blog", position: "right" },
           {
             to: "Resources",
             label: "Resources",
@@ -101,6 +107,10 @@ const config = {
           {
             title: "Social",
             items: [
+              {
+                label: "Email",
+                href: "mailto:pierre-rochet@outlook.fr",
+              },
               {
                 label: "GitHub",
                 href: "https://github.com/pierrerochet",
@@ -122,10 +132,10 @@ const config = {
                 label: "Projects",
                 to: "/docs/Projects",
               },
-              // {
-              //   label: "Blog",
-              //   to: "/blog",
-              // },
+              {
+                label: "Blog",
+                to: "/blog",
+              },
               {
                 label: "Resources",
                 to: "/resources",
@@ -141,21 +151,7 @@ const config = {
       },
     }),
 
-  plugins: [
-    [
-      "docusaurus-plugin-remote-content",
-      {
-        // options here
-        name: "content", // used by CLI, must be path safe
-        sourceBaseUrl: "https://raw.githubusercontent.com/pierrerochet/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "docs", // the base directory to output to.
-        documents: ["/ml-spam-filter-fr/master/README.md"], // the file names to download
-        performCleanup: false,
-        noRuntimeDownloads: true,
-        modifyContent: modifyContent,
-      },
-    ],
-  ],
+  plugins: [],
 };
 
 module.exports = config;
