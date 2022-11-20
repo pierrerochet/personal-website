@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_website=self.webpackChunkpersonal_website||[]).push([[4709],{530:e=>{e.exports=JSON.parse('{"label":"vectorizarion","permalink":"/personal-website/blog/tags/vectorizarion","allTagsPath":"/personal-website/blog/tags","count":1}')}}]);

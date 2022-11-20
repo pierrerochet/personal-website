@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Pierre Rochet Blog</title>
+        <link>https://pierrerochet.github.io/personal-website/blog</link>
+        <description>Pierre Rochet Blog</description>
+        <lastBuildDate>Sun, 20 Nov 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[ML Engineer vs Data Scientist]]></title>
+            <link>https://pierrerochet.github.io/personal-website/blog/2022/11/20/ML-Engineer-vs-Data-scientist</link>
+            <guid>/2022/11/20/ML-Engineer-vs-Data-scientist</guid>
+            <pubDate>Sun, 20 Nov 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Explain the difference between machine learning engineer and data scientist]]></description>
+            <content:encoded><![CDATA[<p>Welcome to this blog. This blog is created with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer"><strong>Docusaurus 2</strong></a>.</p><p>This is my first post on Docusaurus 2.</p><p>A whole bunch of exploration to follow.</p>]]></content:encoded>
+            <author>pierre-rochet@outlook.com (Pierre Rochet)</author>
+            <category>ML Engineer</category>
+            <category>machine learning engineer</category>
+            <category>data scientist</category>
+        </item>
+        <item>
+            <title><![CDATA[Understanding TF-IDF]]></title>
+            <link>https://pierrerochet.github.io/personal-website/blog/2022/11/20/Understanding-TF-IDF</link>
+            <guid>/2022/11/20/Understanding-TF-IDF</guid>
+            <pubDate>Sun, 20 Nov 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Presentation of this is TF-IDF vectorizer]]></description>
+            <content:encoded><![CDATA[<p>Welcome to this blog. This blog is created with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer"><strong>Docusaurus 2</strong></a>.</p><p>This is my first post on Docusaurus 2.</p><p>A whole bunch of exploration to follow.</p>]]></content:encoded>
+            <author>pierre-rochet@outlook.com (Pierre Rochet)</author>
+            <category>TF-IDF</category>
+            <category>term frequency-inverse document frequency</category>
+            <category>vectorizarion</category>
+        </item>
+    </channel>
+</rss>

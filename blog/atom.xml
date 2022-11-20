@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://pierrerochet.github.io/personal-website/blog</id>
+    <title>Pierre Rochet Blog</title>
+    <updated>2022-11-20T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://pierrerochet.github.io/personal-website/blog"/>
+    <subtitle>Pierre Rochet Blog</subtitle>
+    <icon>https://pierrerochet.github.io/personal-website/img/favicon_io/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[ML Engineer vs Data Scientist]]></title>
+        <id>/2022/11/20/ML-Engineer-vs-Data-scientist</id>
+        <link href="https://pierrerochet.github.io/personal-website/blog/2022/11/20/ML-Engineer-vs-Data-scientist"/>
+        <updated>2022-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Explain the difference between machine learning engineer and data scientist]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to this blog. This blog is created with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer"><strong>Docusaurus 2</strong></a>.</p><p>This is my first post on Docusaurus 2.</p><p>A whole bunch of exploration to follow.</p>]]></content>
+        <author>
+            <name>Pierre Rochet</name>
+            <email>pierre-rochet@outlook.com</email>
+            <uri>https://github.com/pierrerochet</uri>
+        </author>
+        <category label="ML Engineer" term="ML Engineer"/>
+        <category label="machine learning engineer" term="machine learning engineer"/>
+        <category label="data scientist" term="data scientist"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Understanding TF-IDF]]></title>
+        <id>/2022/11/20/Understanding-TF-IDF</id>
+        <link href="https://pierrerochet.github.io/personal-website/blog/2022/11/20/Understanding-TF-IDF"/>
+        <updated>2022-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Presentation of this is TF-IDF vectorizer]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to this blog. This blog is created with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer"><strong>Docusaurus 2</strong></a>.</p><p>This is my first post on Docusaurus 2.</p><p>A whole bunch of exploration to follow.</p>]]></content>
+        <author>
+            <name>Pierre Rochet</name>
+            <email>pierre-rochet@outlook.com</email>
+            <uri>https://github.com/pierrerochet</uri>
+        </author>
+        <category label="TF-IDF" term="TF-IDF"/>
+        <category label="term frequency-inverse document frequency" term="term frequency-inverse document frequency"/>
+        <category label="vectorizarion" term="vectorizarion"/>
+    </entry>
+</feed>
