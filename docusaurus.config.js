@@ -10,7 +10,7 @@ const config = {
   title: "Pierre Rochet",
   tagline: "Machine Learning Engineer",
   url: "https://pierrerochet.github.io",
-  baseUrl: "/personal-website/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon_io/favicon.ico",
@@ -57,6 +57,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        {
+          name: "keywords",
+          content: "Pierre Rochet, Machine Learning Engineer",
+        },
+      ],
+      // This would become <meta name="keywords" content="cooking, blog"> in the generated HTML
       navbar: {
         title: "Pierre Rochet",
         logo: {
@@ -81,11 +88,11 @@ const config = {
             label: "Projects",
           },
           // { to: "blog", label: "Blog", position: "right" },
-          // {
-          //   to: "temp",
-          //   label: "Ressources",
-          //   position: "right",
-          // },
+          {
+            to: "Resources",
+            label: "Resources",
+            position: "right",
+          },
         ],
       },
       footer: {
@@ -94,6 +101,10 @@ const config = {
           {
             title: "Social",
             items: [
+              {
+                label: "GitHub",
+                href: "https://github.com/pierrerochet",
+              },
               {
                 label: "Linkedin",
                 href: "https://www.linkedin.com/in/pierre-rochet",
@@ -115,10 +126,10 @@ const config = {
               //   label: "Blog",
               //   to: "/blog",
               // },
-              // {
-              //   label: "Ressources",
-              //   to: "/ressources",
-              // },
+              {
+                label: "Resources",
+                to: "/resources",
+              },
             ],
           },
         ],
